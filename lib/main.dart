@@ -8,6 +8,7 @@ void main() {
 
 void task1() => debugPrint('task1 complete');
 
+//2秒後にPrintされる
 Future<void> task2() async {
   Future<String> future = Future.delayed(const Duration(seconds: 2), () => 'task2 complete');
   String value =  await future;
